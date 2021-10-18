@@ -26,6 +26,7 @@ public class ReadByteDemo {
 			fisObject = new FileInputStream(fileName);
 			
 			// 4. Read values from the stream
+			// -1: read until end of file/stream
 			int value = 0;
 			value = fisObject.read();
 			while (value != -1) {
