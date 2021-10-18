@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * This program demonstrate writing single bytes for multiple times.
+ * This program demonstrate multiple data using FileOutputStream
  * 
  * @author emalianakasmuri
  *
@@ -36,7 +36,7 @@ public class WriteBytesDemo {
 			fosObject.close();  
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}  
 

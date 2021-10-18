@@ -4,8 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * This method demonstrate manipulation of output stream using subclass 
- * of OutputStream.
+ * This program demonstrate writing into a file using FileOutputStream
  * 
  * @author emalianakasmuri
  *
@@ -25,27 +24,22 @@ public class WriteByteDemo {
 			// 2.1 Create an output stream between this file and data.dat
 			fosObject = new FileOutputStream(targetStorage);
 
-			// 3. Write single bytes for three times
-			// Refer to ASCII table.
-			fosObject.write(65);
-			fosObject.write(66);
-			fosObject.write(67);
+			// 3. Create output for the file
+			fosObject.write(1);
+			fosObject.write(2);
+			fosObject.write(3);
 			
 			// 4. Clear the buffer
 			fosObject.flush();
-
-			// Write string
-			/*String text = "Writes the specified byte to this file output stream.";
-					byte textInBytes[ ] = text.getBytes();
-					fileOutputStream.write(textInBytes);
-
-					fileOutputStream.flush();*/
+			
+			// Create another output
+			fosObject.write(400);
 
 			// 5. Close the stream
 			fosObject.close();  
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}  
 
@@ -53,3 +47,10 @@ public class WriteByteDemo {
 		System.out.println("End of program.  Check out " + targetStorage);   
 	}
 }
+
+//Write string
+			/*String text = "Writes the specified byte to this file output stream.";
+					byte textInBytes[ ] = text.getBytes();
+					fileOutputStream.write(textInBytes);
+
+					fileOutputStream.flush();*/
