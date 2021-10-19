@@ -3,6 +3,17 @@ package demo.bytestream.buffer;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 
+/**
+ * This program demonstrate reading byte-based data from a buffer using BufferedInputStream.
+ * The data represents bed utilization for COVID-19 cases in several states of Malaysia.
+ *
+ * The program calculates the average of bed utilization.
+ * 
+ * 
+ * 
+ * @author emalianakasmuri
+ *
+ */
 public class BufferedDataReader {
 
 	public static void main(String[] args) {

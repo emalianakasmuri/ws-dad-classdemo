@@ -1,17 +1,17 @@
 package demo.bytestream.buffer;
 
 import java.io.BufferedOutputStream;
-import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 
 /**
- * This program demonstrate buffered data genereation using BufferedOutputStream.
+ * This program demonstrate writing byte-based data into a buffer using BufferedOutputStream.
+ * The data represents bed utilization for COVID-19 cases in several states of Malaysia.
  * 
  * @author emalianakasmuri
  *
  */
 
-public class BufferedDataGeneator {
+public class BufferedDataGenerator {
 
 	public static void main(String[] args) {
 		
@@ -27,7 +27,6 @@ public class BufferedDataGeneator {
 			BufferedOutputStream bos = new BufferedOutputStream (new FileOutputStream(outFile));
 
 			// 3. Write data into buffer
-			
 			for (int index = 0; index < utilizations.length; index++) {
 				
 				byte utlization = (byte) utilizations[index];

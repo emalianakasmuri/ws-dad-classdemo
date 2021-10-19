@@ -1,10 +1,11 @@
-package demo.outstream;
+package demo.bytestream.raw;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * This program demonstrate writing into a file using FileOutputStream
+ * This program demonstrate writing data as byte using FileOutputStream.
+ * 
  * 
  * @author emalianakasmuri
  *
@@ -22,15 +23,15 @@ public class WriteByteDemo {
 			// 2. Create an output stream between this program and the target storage
 			FileOutputStream fosObject = new FileOutputStream(targetStorage);
 
-			// 3. Create output for the file
+			// 3. Create write data into stream
 			fosObject.write(1);
 			fosObject.write(2);
 			fosObject.write(3);
 			
-			// 4. Clear the buffer
+			// 4. Clear the stream
 			fosObject.flush();
 			
-			// Create another output
+			// Write more data into srream
 			fosObject.write(400);
 
 			// 5. Close the stream

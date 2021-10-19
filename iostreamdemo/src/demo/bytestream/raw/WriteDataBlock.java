@@ -1,4 +1,4 @@
-package demo.outstream;
+package demo.bytestream.raw;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

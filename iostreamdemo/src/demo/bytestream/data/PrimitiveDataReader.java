@@ -7,6 +7,10 @@ import java.io.FileInputStream;
  * This program demonstrate reading byte-based data as it intended type 
  * it is using DataInputStream.
  * 
+ * The data represents bed utilization for COVID-19 cases in several states of Malaysia.
+ * 
+ * The program calculates the average bed utilization and display it on the console.
+ * 
  * @author emalianakasmuri
  *
  */

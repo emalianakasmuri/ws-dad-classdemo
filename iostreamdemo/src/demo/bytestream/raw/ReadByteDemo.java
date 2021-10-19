@@ -1,4 +1,4 @@
-package demo.instream;
+package demo.bytestream.raw;
 
 import java.io.FileInputStream;
 

@@ -4,7 +4,10 @@ import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 
 /**
- * This program demonstrate writing byte-based data using DataOuputStream
+ * This program demonstrate writing byte-based data using DataOuputStream.
+ * The data is written in its original type into the stream.  
+ * 
+ * The data represents bed utilization for COVID-19 cases in several states of Malaysia.
  * 
  * @author emalianakasmuri
  *
@@ -15,7 +18,7 @@ public class PrimitiveDataGenerator {
 		
 		
 		// 1. Declare output file 
-		String outFile = "bedUtilization.txt";
+		String outFile = "bedUtilization1.txt";
 		
 		// Data declaration
 		String states[] = {"Kelantan", "Perlis", "Terengganu", "Melaka", "Johor", 
@@ -27,9 +30,10 @@ public class PrimitiveDataGenerator {
 			// 2. Create stream to read data
 			DataOutputStream dos = new DataOutputStream(new FileOutputStream(outFile));
 			
-			// 3. Write data into data stream
+			// Process data
 			for (int index = 0; index < states.length; index++) {
 				
+				// 3. Write data into data stream
 				dos.writeUTF(states[index]);
 				dos.writeDouble(utilizations[index]);
 				
