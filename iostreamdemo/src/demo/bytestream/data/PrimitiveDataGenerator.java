@@ -1,4 +1,4 @@
-package demo.datastream;
+package demo.bytestream.data;
 
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;
