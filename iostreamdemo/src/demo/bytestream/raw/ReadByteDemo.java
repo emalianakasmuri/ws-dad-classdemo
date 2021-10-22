@@ -18,7 +18,7 @@ public class ReadByteDemo {
 		// 2. Declaration of input stream object
 		FileInputStream fisObject;
 		
-		System.out.println("Input from " + fileName);
+		System.out.println("Input from " + fileName + "\n");
 		
 		try {
 			
@@ -47,7 +47,7 @@ public class ReadByteDemo {
 		}
 		
 		// Indicate end of program - Could be succcessful
-		System.out.println("End of program");  
+		System.out.println("\nEnd of program");  
 		
 		
 	}

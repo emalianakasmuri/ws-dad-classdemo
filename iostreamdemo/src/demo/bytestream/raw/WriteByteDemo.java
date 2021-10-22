@@ -31,7 +31,7 @@ public class WriteByteDemo {
 			// 4. Clear the stream
 			fosObject.flush();
 			
-			// Write more data into srream
+			// Write more data into stream
 			fosObject.write(400);
 
 			// 5. Close the stream
@@ -43,13 +43,7 @@ public class WriteByteDemo {
 		}  
 
 		// Indicate end of program - Could be succcessful
-		System.out.println("End of program.  Check out " + targetStorage);   
+		System.out.println("End of program.  Check out " + targetStorage + ".");   
 	}
 }
 
-//Write string
-			/*String text = "Writes the specified byte to this file output stream.";
-					byte textInBytes[ ] = text.getBytes();
-					fileOutputStream.write(textInBytes);
-
-					fileOutputStream.flush();*/

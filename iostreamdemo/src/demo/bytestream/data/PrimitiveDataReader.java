@@ -19,7 +19,7 @@ public class PrimitiveDataReader {
 	public static void main(String[] args) {
 
 		// 1. Declare output file 
-		String sourceFile = "bedUtilization.txt";
+		String sourceFile = "bedUtilization1.txt";
 		System.out.println("Reading data from " + sourceFile + "\n");
 
 		try {
