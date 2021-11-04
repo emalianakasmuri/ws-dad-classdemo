@@ -1,10 +1,10 @@
-package course.dad.ftmk;
+package course;
 
 public class CourseManager {
 	
 	
 	public Course createCourse (Course course) {
-	
+			
 		String courseCode = course.getCode().toUpperCase();
 		course.setCode(courseCode);
 		

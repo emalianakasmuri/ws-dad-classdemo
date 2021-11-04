@@ -1,12 +1,12 @@
-package server.dad.ftmk;
+package simple.server;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import course.dad.ftmk.Course;
-import course.dad.ftmk.CourseManager;
+import course.Course;
+import course.CourseManager;
 
 /**
  * This class represent a server-side application.
@@ -22,13 +22,13 @@ import course.dad.ftmk.CourseManager;
  * @author emalianakasmuri
  *
  */
-public class CourseServerApp {
+public class SimpleCourseServerApp {
 
 	public static void main(String[] args) {
 		
 		CourseManager courseManager = new CourseManager();
 		
-		System.out.println("Starting CourseServerApp");
+		System.out.println("Starting SimpleCourseServerApp");
 
 		try {
 			

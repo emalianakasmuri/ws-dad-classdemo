@@ -1,4 +1,4 @@
-package course.dad.ftmk;
+package course;
 
 import java.io.Serializable;
 

@@ -1,11 +1,11 @@
-package client.dad.ftmk;
+package simple.client;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.InetAddress;
 import java.net.Socket;
 
-import course.dad.ftmk.Course;
+import course.Course;
 
 /**
  * 
@@ -23,18 +23,20 @@ import course.dad.ftmk.Course;
  * 
  * How to run this program?
  * - Run this program from Terminal
+ * - cd directory until bin
+ * - java simple.client.SimpleCourseClientApp
  * 
  * 
  * 
  * @author emalianakasmuri
  *
  */
-public class CourseClientApp {
+public class SimpleCourseClientApp {
 	
 	
 	public static void main(String args[]) {
 		
-		System.out.println("Launching CourseClientApp program");
+		System.out.println("Launching SimpleCourseClientApp program");
 		
 		
 		// Create new object
